@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>MANZOVER TOTAL CLEAN S.A.S - Servicios</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+		<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.tools.js"></script>
+		<script type="text/javascript" src="lib/jquery.custom.js"></script>
+		
+ <script type="text/javascript"> 
+		var currPic1=1; 
+		var totPics1=16;
+		var keepTime; 
+		function setupPicChange1() {
+				keepTime=setTimeout("changePic1()", 5000); } 
+		function changePic1() { 
+				currPic1++; 
+				if(currPic1>totPics1) currPic1=1;
+				
+				document.getElementById("picture1").src="images/header"+currPic1+".jpg"; 
+				
+				setupPicChange1(); 
+							}
+</script>		
+</head>
+<body onload="setupPicChange1();">
+<div id="content">
+<div id="back">
+<!-- header -->
+<div id="header"> 
+	<div id="menu">
+		<ul>
+			<li><a href="default.html"> HOME </a></li>
+			<li><a href="default.html"> &iquest;QUIENES SOMOS?</p></a></li>
+			<li><a href="servicios.html" >SERVICIOS</a></li>
+		</ul>
+	</div>
+	 <div id="logo">
+		<div id="slider_bg">
+			<div class="waveshow">
+				<img id="picture1" src="images/header1.jpg" alt="" title="" />
+				
+							
+			</div>
+		</div>
+	</div>	
+</div><div class="inner_copy"></div>
+<div class="logo_text">
+ <h1><a href="#">MANZOVER TOTAL CLEAN S.A.S</a></h1>
+		<h2><a href="#">Brindamos satisfacci&oacute;n total de las necesidades de nuestros clientes</a></h2>
+</div>
+<!-- header -->
+<!-- content -->
+ <div id="main">
+	<div id="right">
+		<h2>SERVICIOS</h2><br/>
+			<!--<h4><a href="#">QUIENES SOMOS</a></h4><br/>-->
+								
+	
+	</div>
+	<div id="left">		
+			
+		<img src="images/servicios.jpg" alt="" title="Some Text 4 Goes Here" />		
+			<!--
+			<h3>Nunc pellentesque</h3>
+			<ul>
+			<li><ul>
+				<li><a href="#">Vivamus id arcu</a></li>
+				<li><a href="#">Duis congue ultricies</a></li>
+				<li><a href="#">Purus in mollis purus</a></li>
+				<li><a href="#">Orci nonummy fringilla</a></li>
+				<li><a href="#">Pellentesque at lorem</a></li>
+				<li><a href="#">Enim vivamus convallis</a></li>
+				</ul>
+			</li>
+			</ul>
+			<br/>
+			-->
+					
+	</div>
+	
+
+<!-- / content -->
+<!-- / footer -->
+	</div>
+	<div id="footer">
+		<p>Manzover Total Clean S.A.S || servicioalcliente@manzover.co - gerente@manzover.co - servicioalcliente@manzover.co </a></p>
+		<p>Powered by Oscar Fernando Martinez Masmela || 2013</a></p>
+		
+	</div>
+	<div style="clear: both"></div>
+</div>
+</div>
+</body>
+</html>

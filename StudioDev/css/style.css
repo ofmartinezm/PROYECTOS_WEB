@@ -1,0 +1,45 @@
+.home-wrapper{
+	background: url('../images/background.jpg') no-repeat center top;
+	color: white;
+}
+header{
+
+	padding: 10px 0;
+}
+header img{
+
+	width: 200px;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header nav a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 10px 15px;
+	border-radius: 3px;
+
+}
+
+header nav a.active{
+	background: #fed136;
+
+}
+
+#home{
+
+	text-align: center;
+	padding: 200px 0 150px;
+}
+
+.container{
+	width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}

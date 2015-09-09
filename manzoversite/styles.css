@@ -1,0 +1,65 @@
+* {margin:0;padding:0}
+a:link {color:#1F5111}
+a:hover {text-decoration:none;color:#f00}
+a:visited {color:#1F5111}
+body {background:#75DAFF url(images/back_all.jpg) repeat-x;font:13px Arial, Helvetica, sans-serif;color:#666666}
+.inner_copy, .inner_copy a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+#content {}
+#back {width:778px;background:#EAF6AA;border:15px solid #EAF6AA;margin:0 auto}
+#header {height:418px;text-align:left}
+#menu {width:678px;height:61px;padding-left:100px;background:url(images/menu.gif) repeat-x}
+#menu ul {list-style:none}
+#menu li {display:inline}
+#menu a {float:left;width:120px;height:41px;display:block;text-align:center;text-decoration:none;color:#1E5010;font-weight:bold;padding-top:20px;font-size:16px;text-transform:lowercase}
+#menu a:hover {width:120px;height:44px;color:#F8FAF7;text-decoration:underline;background:url(images/menu_r.gif) repeat-x}
+#logo {background:url(images/header.jpg) no-repeat;width:778px;height:355px;text-align:left;margin-bottom:10px}
+#logo a {text-decoration:none;text-transform:lowercase;font-style:italic;font-size:16px;color:#F8FAF7}
+#logo H1 {padding:0;margin:0}
+#logo H2 a {font-size:10px;padding:0;margin:0}
+.logo_text {background:url(images/menu.gif) repeat-x;height:61px;padding-top:10px;padding-left:30px}
+.logo_text H1 {font-size:18px}
+.logo_text H2 a {font-size:11px;text-decoration:none}
+#main {padding:10px;padding-top:10px}
+#left {width:229px}
+#left H3 {width:209px;height:35px;font-size:14px;font-weight:bold;padding-left:20px;padding-top:17px;text-transform:uppercase;color:#1E5010;background:url(images/title.gif) repeat-x}
+#left ul {list-style:none}
+#left li {background:#E9EFE4;border-left:1px solid #1F5111;border-right:1px solid #1F5111;border-bottom:1px solid #1F5111}
+#left li ul {border:0;margin-left:20px;margin-bottom:10px}
+#left li li {padding:4px 20px;background:url(images/small.gif) no-repeat left;border:0}
+#left a {color:#1F5111}
+#left a:visited {color:#1F5111}
+#left p {padding:10px}
+#calendar1 {padding:0 10px 20px 10px}
+#calendar table {width:100%;text-align:center}
+#calendar thead {}
+#calendar tbody td {border:1px solid #F1F1F1}
+#calendar #prev {text-align:left}
+#calendar #next {text-align:right}
+#calendar tfoot a {text-decoration:none;font-weight:bold}
+#calendar #now {background:#696969;border:1px solid #f00;font-weight:bold;color:#fff}
+#right .date2 {margin:10px;padding:0;padding-top:3px}
+.date2 {float:left;width:53px;height:54px;background:url(images/date.gif) no-repeat;text-transform:uppercase;text-align:center;font-size:8px;font-weight:bold;color:#fff;vertical-align:middle}
+.date2 b {display:block;font-size:35px;color:#2F6AA2}
+#right {float:right;width:500px;padding-right:10px}
+#right H4 {margin:0;padding:0;font-size:12px;color:#1F5111}
+#right a {color:#1F5111;text-decoration:none}
+#right p {margin:0;padding:0;padding-bottom:10px}
+#right h2 {margin:0;padding:0;padding-top:10px;color:#1F5111}
+.date {text-align:right;color:#808080;font-size:11px}
+.date a {color:#D72020}
+#footer {height:50px;clear:both;padding-top:20px;border-top:5px solid #1E5010;background:url(images/footer.gif) repeat-x bottom}
+#footer p {margin:0;font-size:10px;text-align:center;color:#1F5111}
+#footer a {color:#1F5111}
+/* Header Scroll */
+.nivoSlider {position:relative}
+.nivoSlider img {position:absolute;top:0;left:0px}
+.nivoSlider a.nivo-imageLink {position:absolute;top:0;left:0;width:100%;height:100%;border:0;padding:0;margin:0;z-index:60;display:none}
+.nivo-slice {display:block;position:absolute;z-index:50;height:100%}
+.nivo-caption {position:absolute;left:0;bottom:0; color:#fff;width:100%;z-index:89;padding-left:10px;font-weight:bold}
+.nivo-caption p {padding:10px 5px;margin:0;text-indent:-9999%}
+.nivo-directionNav a {position:absolute;width:45px;height:60px;top:41%;z-index:99;cursor:pointer;text-indent:-9999%}
+.nivo-prevNav {background-position:left bottom;left:25px;margin-top:20px;background:url(images/but_left.png) no-repeat}
+.nivo-nextNav {background-position:left top;right:0;margin-top:20px;background:url(images/but_right.png) no-repeat}
+.nivo-controlNav {bottom:-20px;position:absolute;right:0}
+.nivo-controlNav a {float:left;width:14px;height:14px;display:block;position:relative;z-index:99;cursor:pointer;text-indent:-9999%}
+.nivo-controlNav a.active {background-position:left top;margin-top:-1px}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Creación de Ventanas de Diálogo ::cazaresluis.com::</title>
+<link href="css/ui-darkness/jquery-ui-1.8.16.custom.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery-validation-1.9.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery-validation-1.9.0/lib/jquery.metadata.js"></script>
+
+<style type="text/css">
+body
+{
+	font-size:0.9em;
+}
+
+.wraper{
+	margin:0 auto;
+	width:400px;
+	height:auto;
+
+	/*Borde redondeado*/
+	border:1px solid #000;
+	border-radius: .8em;
+	-moz-border-radius: .8em;
+	-webkit-border-radius: .8em;
+	-o-border-radius: .8em;
+}
+
+.informacion
+{
+	text-align:center;
+}
+
+#formAjax label{
+	display: block;
+}
+
+#formAjax .error{
+	font-size:0.8em;
+	color:#ff0000;
+	display:inline;
+	padding:0 0 0 3px;
+}
+
+#datosContacto{
+    border-radius: 5px 5px 5px 5px;
+}
+
+#datosContacto input{
+	width: 290px;
+	height:25px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px 5px 5px 5px;
+    font-size: 0.8em;
+}
+
+.boton {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px 5px 5px 5px;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	// Formateamos el botón Diálogo sencillo
+	$('#dialogSencillo').button();
+
+	// Damos formato a la Ventana de Diálogo
+	$('#dialogoFormulario').dialog({
+		// Indica si la ventana se abre de forma automática
+		autoOpen: false,
+		// Indica si la ventana es modal
+		modal: true,
+		// Largo
+		width: 350,
+		// Alto
+		height: 'auto'
+	});
+
+	// Mostrar Diálogo Sencillo
+	$('#dialogSencillo').click(function(){
+		$('#dialogoFormulario').dialog('open');
+	});
+
+	// Validamos el formulario
+	$('#formAjax').validate({
+	
+		submitHandler: function(){
+			// Serializamos el formulario
+			str = $("#formAjax").serialize();
+
+			// Mostrar la fecha del Servidor
+			$.ajax({
+				// Antes de realizar la llamada al script php
+				beforeSend: function(){
+			      
+				  // Mostramos el pre-loader
+					$('#respuestaAJAX').html('<img id="loader" src="images/ajax-loader.gif"/><p><small>Procesando el Formulario. . . .</small></p>');
+				// Ocultamos el botón Continuar
+					$('#botonera').hide();	
+			  },
+				cache: false, // Indicamos que no se guarde en cache
+				type: "POST", // Variables POST
+				url:"ajaxFormPhp.php", // srcript a ejecutar
+				data: str +"&amp;accion=ProcesaFormulario&amp;id=" + Math.random(), // paso de datos
+				// cuando es exitoso el llamado
+				success: function(response){
+			        // Mostramos los valores devueltos por el php
+					$('#respuestaAJAX').html(response);
+			        // Vaciamos los campos del formulario
+					$('#datosContacto > input[type=text]').val('');
+				}
+			});
+
+		},
+		errorPlacement: function(error, element) {
+			error.appendTo(element.prev("span").append());
+		}
+	});
+
+});
+</script>
+
+</head>
+<body>
+	<div id="dialogoFormulario" title="Ventana de Diálogo con Formulario" style="display:none;">
+		<form action="" method="post" id="formAjax" name="formAjax">
+			<h3>INFORMACIÓN DE CONTACTO</h3>
+			<fieldset id="datosContacto">
+				<label for="rg_nombre">Nombre</label>
+				<span></span>
+				<input type="text" id="rg_nombre" name="rg_nombre" class="{required:true}"/>
+				<label for="rg_apellidos">Apellidos</label>
+				<span></span>
+				<input type="text" id="rg_apellidos" name="rg_apellidos" class="{required:true}"/>
+				<label for="rg_correoE">Correo Electrónico</label>
+				<span></span>
+				<input type="text" id="rg_correoE" name="rg_correoE" class="{required:true,email:true}"/>
+			</fieldset>
+
+			<fieldset id="respuestaAJAX" style="text-align:center; border: none; padding: 3px 0;">
+			</fieldset>
+
+			<fieldset id="botonera" style="border:none; text-align: center;">
+				<input id="envioFormulario" class="boton" type="submit" value="Continuar" name="envioFormulario">
+			</fieldset>
+		</form>
+	</div>
+	<div class="wraper">
+		<div class="informacion">
+			<h3>Ventana de Diálogo con Formulario</h3>
+			<h3>HTML / jQuery / jQuery UI</h3>
+			<p>button <-> dialog <-> jQuery Validate</p>
+			<div id="dialogSencillo">Diálogo Sencillo Formulario</div>
+			<p>cazaresluis.com</p>
+		</div>
+	</div>
+</body>
+</html>
