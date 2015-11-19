@@ -1,6 +1,66 @@
-ELSE HACE LLAMADO INSERT INTO taca_franja: ** pn_horcodnum 50267 ** pn_ejecodnum 415 ** pn_percodnum 1 ** pn_dsm 6 ** pn_codnum 117424 ** pn_horini 7 ** pn_minini 0 ** pn_horfin 10 ** pn_minfin 30 ** 0 0 ** pn_cod_mrt_lugar 0 ** pn_aul_codnum  ** pn_ele_codnum 
-"Error  insert taca_franja :ORA-20675: Ya existe una franja para este grupo de actividad. Asigne el horario de la entidad, directamente en el horario del grupo
-ORA-06512: en "UXXIAC.UIB$UERR", línea 857
-ORA-06512: en "UXXIAC.ACA$DSRG", línea 220
-ORA-06512: en "UXXIAC.DACA_FRN_ASIU_SOLAPE_HORARIO", línea 2
-ORA-04088: error durante la ejecución del disparador 'UXXIAC.DACA_FRN_ASIU_SOLAPE_HORARIO'"
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.neighborhood-guides{
+    background-color: #efefef;
+    border-bottom : 1px solid #dbdbdb;
+    
+}
+
+.neighborhood-guides h2{
+    color : #393c3d;
+    font-size : 24px;
+}
+
+.neighborhood-guides p{
+    font-size: 15px;
+    margin-bottom : 13px;
+    
+}
