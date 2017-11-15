@@ -3,7 +3,7 @@ body{
 	background-color:#fff;
 	color: #999;
 	font-family: 'Amaranth', sans-serif;
-}	
+}
 #wrapper{
 	max-width: 960px;
 	margin:0 auto;
@@ -14,6 +14,11 @@ body{
 #logo{
 	text-align: center;
 	margin:0 ;
+
+}
+.logo_marco{
+	background:url(../images/fondo.jpg) repeat-x;height:140px;padding-top:10px;padding-left:30px
+	/*height:61px;*/
 }
 
 a{
@@ -31,8 +36,8 @@ h3{
 }
 
 header{
-	background:#9ADF9A; /*#0D0D0D;*/
-	border-color: #36312C;
+	/*background:#9ADF9A; /*#0D0D0D;*/
+	/*border-color: #36312C;*/
 	float: left;
 	margin: 0 0 25px 0;
 	padding: 5px 0 0 0;
@@ -62,7 +67,7 @@ h2{
 
 nav a, nav a:visited{
 	color: #fff; /*blanco*/
-}	
+}
 
 nav a.selected, nav a:hover{
 	color:#C7C1BB;
@@ -97,7 +102,7 @@ footer{
 	font-size: 0.8em;
 	text-align: center;
 	padding-top:50px;
-	color: #bdc3c7; 
+	color: #bdc3c7;
 	clear: both;
 }
 
@@ -122,7 +127,7 @@ footer{
 	margin: 0;
 	padding: 5%;
 	font-size: 0.8em;
-	color:  #bdc3c7; 
+	color:  #bdc3c7;
 }
 
 
