@@ -1,8 +1,8 @@
 /*configuracion general*/
 body{
-	background-color: #fff;
+	background-color:#fff;
 	color: #999;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Amaranth', sans-serif;
 }	
 #wrapper{
 	max-width: 960px;
@@ -31,7 +31,7 @@ h3{
 }
 
 header{
-	background: #0D0D0D;
+	background:#9ADF9A; /*#0D0D0D;*/
 	border-color: #36312C;
 	float: left;
 	margin: 0 0 25px 0;
@@ -42,7 +42,7 @@ header{
 
 h1{
 	color: #fff;
-	font-family: 'Griffy', cursive;
+	font-family: 'Playball', cursive;
 	font-size: 1.80em;/*em unidad relativa a otra 1.80 veces mas grande que la que tiene
 	por defecto el navegador*/
 	margin: 20px 0;
@@ -52,7 +52,7 @@ h1{
 
 h2{
 	color: #fff;
-	font-family: 'Griffy', cursive;
+	font-family: 'Yellowtail', cursive;
 	font-weight: normal; /*que no se muestre en negrita */
 	margin-top: -5px;
 	line-height: 0.6em;
@@ -72,8 +72,8 @@ nav{
 	text-align: center;
 	padding: 15px 0;
 	margin: 15px 0;
-	font-family: 'Griffy', cursive;
-	background-color: #36312C;
+	font-family: 'Playball', cursive;
+	background-color: #3D8F44/*#36312C*/;
 }
 
 nav ul{
